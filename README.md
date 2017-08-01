@@ -1,4 +1,4 @@
-# React Native Quotes App With Redux and JWT-Powered Authentication API
+# React Native/Redux Quotes App using a JWT-Powered Authentication API
 
 In the <a href="https://medium.com/@mosesesan/tutorial-react-native-redux-with-crud-operations-cdb449538886">previous</a> tutorial, we created a React Native Quotes app with CRUD operations that uses React Native AsyncStorage for storing our quotes.
 
