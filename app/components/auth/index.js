@@ -48,7 +48,7 @@ export class Authentication extends Component {
                         <AuthTextInput
                             onChangeText={(text) => this.setState({username: text})}
                             placeholder={"Username"}
-                            autoFocus={false}
+                            autoFocus={true}
                             value={this.state.username}
                             error={this.state.error['username']}
                             secureTextEntry={false}
@@ -58,7 +58,7 @@ export class Authentication extends Component {
                     <AuthTextInput
                         onChangeText={(text) => this.setState({email: text})}
                         placeholder={"Email Address"}
-                        autoFocus={true}
+                        autoFocus={false}
                         value={this.state.email}
                         error={this.state.error['email']}
                         secureTextEntry={false}

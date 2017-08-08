@@ -58,6 +58,7 @@ export class AuthTextInput extends Component {
                         style={[auth_styles.textInput, {}]}
                         value={this.props.value}
                         secureTextEntry={this.props.secureTextEntry}
+                        autoCapitalize = 'none'
                     />
                 </View>
                 {
