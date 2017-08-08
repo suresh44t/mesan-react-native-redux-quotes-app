@@ -40,10 +40,7 @@ var AuthAPI = {
                 fetch(url+token, requestConfig)
                     .then((response) => response.json())
                     .then((responseData) => callback(true))
-                    .catch(error => {
-                        console.log(error)
-                        callback(false, error)
-                    })
+                    .catch(error => callback(false, error))
                     .done();
             }else{
                 callback(true);
