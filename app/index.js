@@ -53,7 +53,7 @@ export default class Main extends Component {
                     <Scene key="root">
                         <Scene key="home" component={Home} title="Home" initial/>
                         <Scene key="welcome" hideNavBar={true} hideTabBar panHandlers={null}
-                               schema="modal" direction="vertical" title="Login">
+                               schema="modal" direction="vertical">
                             <Scene key="welcome-" component={Welcome} title="Welcome" initial={true}
                                    panHandlers={null}/>
                             <Scene key="login" component={Login} title="Login" panHandlers={null}/>

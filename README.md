@@ -10,7 +10,7 @@ For this tutorial series, we will build a quotes app that allows users to:
 * view all quotes
 * add new quotes
 * edit an existing quote
-* delete an existing book from the list
+* delete an existing quote from the list
 * like quotes
 * add comments to quotes and
 * share quotes on Facebook and Twitter

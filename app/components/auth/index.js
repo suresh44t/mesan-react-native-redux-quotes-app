@@ -77,8 +77,7 @@ export class Authentication extends Component {
                     }
 
 
-                    {//if the container type is Login, show the
-                        // username input
+                    {//if the container type is Login, show the forgot password text
                         (this.props.login) &&
                         <Text style={[styles.forgotText]} onPress={Actions.password}>{"Forgot Password"}</Text>
                     }
@@ -100,8 +99,12 @@ export class Authentication extends Component {
         error["email"] = (state.email.length <= 0) ? "Your email is required!" : "";
 
         if (!this.props.recover) {
-            if (state.password.length <= 0) errCount++; //if login or register, check password
-            error["password"] = (state.password.length < 6) ? "Password should be Min 6 characters" : "";
+            if (state.password.length <= 0 || state.password.length < 6) {
+                error["password"] = "Password should be Min 6 characters";
+                errCount++;
+            }else{
+                error["password"] = "";
+            }
 
             if (this.props.register) {//if register, check username
                 if (state.username.length <= 0) errCount++;
