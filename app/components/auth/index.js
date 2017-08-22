@@ -99,12 +99,8 @@ export class Authentication extends Component {
         error["email"] = (state.email.length <= 0) ? "Your email is required!" : "";
 
         if (!this.props.recover) {
-            if (state.password.length <= 0 || state.password.length < 6) {
-                error["password"] = "Password should be Min 6 characters";
-                errCount++;
-            }else{
-                error["password"] = "";
-            }
+            if (state.password.length < 6) errCount++;
+            error["password"] = (state.password.length < 6) ? "Password should be Min 6 characters" : ""
 
             if (this.props.register) {//if register, check username
                 if (state.username.length <= 0) errCount++;
